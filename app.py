@@ -46,14 +46,8 @@ def go():
     start()
     time.sleep(900)
     start()
-    return
 
-def run():
-    Flask(__name__)
-    go()
-    return
-    
-run = run()
+run = go()
 
 if __name__ == "__main__":
     app.run(debug=False)
