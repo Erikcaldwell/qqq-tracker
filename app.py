@@ -47,8 +47,6 @@ def go():
     time.sleep(900)
     start()
 
-run = go()
-
 if __name__ == "__main__":
     app.run(debug=False)
     go()
