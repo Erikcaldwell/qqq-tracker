@@ -42,11 +42,13 @@ def start():
     data_ordered = download_df
     return data_ordered
 
+run = go()
+
 def go():
     start()
     time.sleep(900)
     start()
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
     go()
