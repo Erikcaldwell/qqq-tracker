@@ -97,5 +97,5 @@ def analyzer():
     score_df = score_df.apply(pd.to_numeric, errors='ignore')
     score_df = json.loads(score_df.to_json(orient='records'))
     db_cm.insert(score_df)
-
+    time.sleep(900)
     return
